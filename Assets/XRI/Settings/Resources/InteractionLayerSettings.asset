@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
+  - Key One
+  - Key Two
+  - Key Three
+  - Key Four
   - 
   - 
   - 
