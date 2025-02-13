@@ -475,7 +475,7 @@ Transform:
   m_GameObject: {fileID: 89937779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.008000284, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2330,27 +2330,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 360937271}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &311678297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311678293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 124f4583f657475469a45ab6fca8f921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pivotTransform: {fileID: 89937780}
-  _rotationAxis: 1
-  _constraints:
-    MinAngle:
-      Constrain: 1
-      Value: -90
-    MaxAngle:
-      Constrain: 1
-      Value: 90
 --- !u!114 &311678298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,8 +2386,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 311678297}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 311678302}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
   _rigidbody: {fileID: 311678300}
@@ -2462,6 +2441,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6454606, y: 0.25072867, z: 1.6454606}
   m_Center: {x: 0, y: 0.005512107, z: 0}
+--- !u!114 &311678302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311678293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b80644816ce922468d6e1dc8c12daff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pivotTransform: {fileID: 89937780}
+  _rotationAxis: 1
+  _constraints:
+    MinAngle:
+      Constrain: 1
+      Value: -90
+    MaxAngle:
+      Constrain: 1
+      Value: 90
 --- !u!1 &312910447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,12 +2847,12 @@ PrefabInstance:
     - target: {fileID: 8447340205626026950, guid: 87a8f709a9482a24abd6c5dac0b760e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8447340205626026950, guid: 87a8f709a9482a24abd6c5dac0b760e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9217776450566077176, guid: 87a8f709a9482a24abd6c5dac0b760e4,
         type: 3}
@@ -2930,7 +2930,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7375770755932388462, guid: 87a8f709a9482a24abd6c5dac0b760e4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 311678297}
+      addedObject: {fileID: 311678302}
   m_SourcePrefab: {fileID: 100100000, guid: 87a8f709a9482a24abd6c5dac0b760e4, type: 3}
 --- !u!1 &360937272 stripped
 GameObject:
@@ -2955,10 +2955,10 @@ MonoBehaviour:
   _constraints:
     MinAngle:
       Constrain: 1
-      Value: 90
+      Value: -90
     MaxAngle:
       Constrain: 1
-      Value: -90
+      Value: 90
 --- !u!114 &360937274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6491,10 +6491,10 @@ MonoBehaviour:
   _constraints:
     MinAngle:
       Constrain: 1
-      Value: 90
+      Value: -90
     MaxAngle:
       Constrain: 1
-      Value: -90
+      Value: 90
 --- !u!114 &844868891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7665,7 +7665,7 @@ Transform:
   m_GameObject: {fileID: 1043728822}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.017, y: -0.017, z: -0.001}
+  m_LocalPosition: {x: 0, y: 0, z: -0.001}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
