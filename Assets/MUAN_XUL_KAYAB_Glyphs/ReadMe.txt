@@ -1,1 +1,0 @@
-Meshes in FBX format and maps (textures) in each folder.
