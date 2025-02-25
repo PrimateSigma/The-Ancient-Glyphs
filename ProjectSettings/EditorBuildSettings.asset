@@ -6,10 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/The Ancient Glyphs.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 61f446fc3f23827469e06b4fb5c2ddb5,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f1de0294faf092e418ab195b4fd74986,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 43ddeed162c110e4a80fba7a6242d678,
       type: 2}
