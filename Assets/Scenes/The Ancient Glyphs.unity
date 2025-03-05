@@ -2777,6 +2777,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 695964078291032588, guid: 769896e017b96da4580445113a0d170f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 921130318775107786, guid: 769896e017b96da4580445113a0d170f,
         type: 3}
       propertyPath: m_Name
