@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Trigger : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
     private void Start()
     {
@@ -8,7 +8,6 @@ public class Trigger : MonoBehaviour
     }
     public void InsideZone(GameObject go)
     {
-        //go.SetActive(false);
-        go.SetActive(!go.activeSelf);
+        go.SetActive(true);
     }
 }

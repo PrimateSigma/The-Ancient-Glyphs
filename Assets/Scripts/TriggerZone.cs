@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class TriggerZone : MonoBehaviour
 {
-    public string targetTag;
+    [SerializeField] string targetTag;
     public UnityEvent<GameObject> OnEnterEvent;
     private void OnTriggerEnter(Collider other)
     {
