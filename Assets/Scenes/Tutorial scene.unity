@@ -647,7 +647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9.3}
+  m_AnchoredPosition: {x: 0, y: 8.08}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305783359
@@ -677,15 +677,11 @@ MonoBehaviour:
     You
     were part of an expedition, searching for the Lost Sun Stone, an artifact of
     divine power. But legend says no one leaves the temple without proving their
-    worth. To escape, you must complete four ancient trials, each a test of intelligence,
-    courage, and teamwork.
+    worth. To escape, you must complete four ancient trials.
 
 
-    The torchlight flickers. Shadows move along the
-    walls. You are not alone.
-
-
-    If you succeed, a massive stone gate opens'
+    If you succeed,
+    a massive stone gate opens'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1053,12 +1049,12 @@ PrefabInstance:
     - target: {fileID: 2514675399181695721, guid: f54012181eacade4ea242c65f804720f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.193
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2514675399181695721, guid: f54012181eacade4ea242c65f804720f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.537
+      value: -1.195
       objectReference: {fileID: 0}
     - target: {fileID: 2514675399181695721, guid: f54012181eacade4ea242c65f804720f,
         type: 3}
@@ -1692,7 +1688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6.54}
+  m_AnchoredPosition: {x: 0, y: -5.22}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932906798
@@ -2482,15 +2478,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314330845517557053}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.72104347, y: -0, z: -0, w: 0.6928899}
+  m_LocalPosition: {x: 0.11379999, y: 0.3677301, z: -0.36202466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8464628402730983530}
   - {fileID: 4100275313146687331}
   m_Father: {fileID: 7349005695526249989}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 92.281006, y: 0, z: 0}
 --- !u!1 &953353216298534234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3536,18 +3532,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5557279512709755035}
-  m_LocalRotation: {x: 0, y: 0.7660445, z: -0.6427876, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.08}
+  m_LocalRotation: {x: 0, y: 0.99998105, z: -0.006171315, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08000001}
   m_LocalScale: {x: 0.0003602871, y: 0.000360287, z: 0.00036028697}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2011119292458385297}
   - {fileID: 9113644383906398468}
   m_Father: {fileID: 4809223393674089133}
-  m_LocalEulerAnglesHint: {x: 80, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.707, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.017, y: -0.04}
+  m_AnchoredPosition: {x: 0.017000023, y: -0.040000007}
   m_SizeDelta: {x: 200, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2101990969495005518
@@ -5506,7 +5502,7 @@ Transform:
   m_GameObject: {fileID: 8742768428166012660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.105, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8059,7 +8055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6104729859264534474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9470,7 +9466,7 @@ Transform:
   m_GameObject: {fileID: 7887170178214504369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 0, z: 0}
+  m_LocalPosition: {x: -0.14, y: 0, z: -1.138}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
