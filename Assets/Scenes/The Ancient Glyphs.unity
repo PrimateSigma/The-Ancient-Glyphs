@@ -3788,7 +3788,6 @@ GameObject:
   - component: {fileID: 322182306}
   - component: {fileID: 322182305}
   - component: {fileID: 322182304}
-  - component: {fileID: 322182311}
   m_Layer: 0
   m_Name: RotateRing
   m_TagString: Untagged
@@ -3994,23 +3993,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322182302}
   m_Mesh: {fileID: -699651452962277039, guid: 94372f53a96186e4fa865f9afcea7052, type: 3}
---- !u!114 &322182311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322182302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 857d10b25518a4bf78506a49aeb2a877, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roteratObjekt: {fileID: 322182303}
-  fallandeObjekt: {fileID: 446172724}
-  fallHastighet: 1
-  stoppY: 1
-  aktiverad: 0
 --- !u!1 &323891406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,7 +5230,6 @@ GameObject:
   - component: {fileID: 446172723}
   - component: {fileID: 446172722}
   - component: {fileID: 446172721}
-  - component: {fileID: 446172725}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -5343,33 +5324,6 @@ Transform:
   - {fileID: 1403364105}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &446172725
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446172720}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &447415196
 GameObject:
   m_ObjectHideFlags: 0
@@ -20682,6 +20636,55 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.03454852, y: 0.0005114786, z: 0.00007304177}
     m_Extent: {x: 0.0009967163, y: 0.0020704702, z: 0.004453361}
   m_DirtyAABB: 0
+--- !u!1 &1811161231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811161233}
+  - component: {fileID: 1811161232}
+  m_Layer: 0
+  m_Name: FallController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1811161232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811161231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34063da7ada1c4ec3a43a8bf8f9fba6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roteratObjekt: {fileID: 322182303}
+  fallandeObjekt: {fileID: 446172724}
+  fallHastighet: 1.5
+  stoppY: 1
+  startaFall: 1
+--- !u!4 &1811161233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811161231}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.4285784, y: 2.053, z: -0.404}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820338994
 GameObject:
   m_ObjectHideFlags: 0
@@ -23792,6 +23795,7 @@ SceneRoots:
   - {fileID: 1481564017}
   - {fileID: 2095090530}
   - {fileID: 1543686961}
+  - {fileID: 1811161233}
   - {fileID: 446172724}
   - {fileID: 322182303}
   - {fileID: 934709427}
