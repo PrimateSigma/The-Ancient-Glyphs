@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SocketTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Tooltip("Det objekt som ska spela en animation")]
+    public Animator targetAnimator;
 
-    // Update is called once per frame
-    void Update()
+    [Tooltip("Namnet på triggern i animatorn som ska spelas")]
+    public string animationTriggerName = "PlayAnimation";
+
+    [Tooltip("Tag på det objekt som ska trigga animationen")]
+    public string targetTag = "Amulet";
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag(targetTag))
+        {
+            Debug.Log("Objekt placerat i socket – spelar animation.");
+            targetAnimator.SetTrigger(animationTriggerName);
+        }
     }
 }
+
