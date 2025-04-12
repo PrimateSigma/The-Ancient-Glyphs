@@ -3,7 +3,22 @@ guid: cd6aa82babae432458a572766ed7c0a0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Woodworks_Canvas_Textured
+    second: {fileID: 2100000, guid: 6e5360f0ccdc5f54889a02cea76deedd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Woodworks_Frame_Textured
+    second: {fileID: 2100000, guid: df799c037af702f42a20c182e015aa82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Woodworks_Glyph_Textured
+    second: {fileID: 2100000, guid: 546d83a189b617b469ec331c4dc25cd0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
