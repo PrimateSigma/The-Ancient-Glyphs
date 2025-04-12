@@ -1,35 +1,47 @@
 using UnityEngine;
 
-public class HandleRotationController : MonoBehaviour
+public class RotateAndDrop : MonoBehaviour
 {
-    [Header("Drag in handtaget här")]
-    public Transform handle;
+    public Transform fallingObject; // Dra objektet som ska falla hit i inspektorn
+    public float fallSpeed = 2f; // Hur snabbt objektet faller
+    public float rotationThreshold = 10f; // Hur mycket du måste rotera innan det börjar falla
+    public float stopY = -2f; // Position i Y där det ska stanna
 
-    [Header("Det objekt som ska följa rotationen")]
-    public Transform targetObject;
-
-    [Header("Rotation Axis")]
-    public Vector3 rotationAxis = Vector3.up;
-
-    [Header("Rotation Multiplier")]
-    public float rotationMultiplier = 1f;
-
-    private float initialHandleAngle;
-    private float initialTargetAngle;
+    private Quaternion initialRotation; // Startrotation
+    private bool hasReachedBottom = false; // Om objektet har nått botten
 
     void Start()
     {
-        initialHandleAngle = Vector3.Dot(handle.localEulerAngles, rotationAxis);
-        initialTargetAngle = Vector3.Dot(targetObject.localEulerAngles, rotationAxis);
+        initialRotation = transform.rotation;
     }
 
     void Update()
     {
-        float currentHandleAngle = Vector3.Dot(handle.localEulerAngles, rotationAxis);
-        float deltaAngle = Mathf.DeltaAngle(initialHandleAngle, currentHandleAngle);
+        // Om inget objekt är tilldelat eller om vi redan nått botten, gör ingenting
+        if (fallingObject == null || hasReachedBottom)
+            return;
 
-        float newTargetAngle = initialTargetAngle + deltaAngle * rotationMultiplier;
-        targetObject.localRotation = Quaternion.AngleAxis(newTargetAngle, rotationAxis);
+        // Beräkna rotationsskillnaden
+        float angleDifference = Quaternion.Angle(initialRotation, transform.rotation);
+
+        // Om rotationsskillnaden är tillräckligt stor
+        if (angleDifference > rotationThreshold)
+        {
+            // Om objektet är ovanför stopY, fortsätt sänka det
+            if (fallingObject.position.y > stopY)
+            {
+                fallingObject.position += Vector3.down * fallSpeed * Time.deltaTime;
+            }
+            else
+            {
+                // Annars stanna exakt på stopY och markera som klar
+                Vector3 pos = fallingObject.position;
+                pos.y = stopY;
+                fallingObject.position = pos;
+                hasReachedBottom = true;
+            }
+        }
     }
 }
+
 
