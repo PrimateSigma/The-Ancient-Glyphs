@@ -189,8 +189,8 @@ MonoBehaviour:
     XAxis:
       ConstrainAxis: 1
       AxisRange:
-        Min: -0.5
-        Max: 0.5
+        Min: 0
+        Max: 0
     YAxis:
       ConstrainAxis: 1
       AxisRange:
@@ -199,8 +199,8 @@ MonoBehaviour:
     ZAxis:
       ConstrainAxis: 1
       AxisRange:
-        Min: 0
-        Max: 0
+        Min: -0.5
+        Max: 0.5
   _rotationConstraints:
     XAxis:
       ConstrainAxis: 0
@@ -208,12 +208,12 @@ MonoBehaviour:
         Min: 0
         Max: 0
     YAxis:
-      ConstrainAxis: 0
+      ConstrainAxis: 1
       AxisRange:
         Min: 0
         Max: 0
     ZAxis:
-      ConstrainAxis: 0
+      ConstrainAxis: 1
       AxisRange:
         Min: 0
         Max: 0
@@ -245,11 +245,12 @@ GameObject:
   - component: {fileID: 919332403479027416}
   - component: {fileID: 1451191455869397991}
   - component: {fileID: 2309438508468708753}
+  - component: {fileID: 5748680239382019300}
   - component: {fileID: 4379592963880355358}
   - component: {fileID: 2792897924243419436}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: FinishMaze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,7 +298,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9df124e0853d084479a96878b1629dfc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -319,6 +320,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5748680239382019300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023937796603500022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &4379592963880355358
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -341,11 +364,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!138 &2792897924243419436
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -353,7 +376,7 @@ FixedJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023937796603500022}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 1622104490859492044}
   m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -413,7 +436,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6990554545295284670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
