@@ -5,14 +5,16 @@ using UnityEngine.Events;
 
 public class TriggerZone : MonoBehaviour
 {
-    public string targetTag;
+    [SerializeField] private string targetTag;
+    [SerializeField] private Animator targetAnimator;
     public UnityEvent<GameObject> OnEnterEvent;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == targetTag)
         {
-            OnEnterEvent.Invoke(other.gameObject);
+            targetAnimator.SetTrigger("PlayAnimation");
+            OnEnterEvent.Invoke(other.gameObject);            
         }
     }
 }
