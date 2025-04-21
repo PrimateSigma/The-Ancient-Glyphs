@@ -234,6 +234,7 @@ MonoBehaviour:
       AxisRange:
         Min: 1
         Max: 1
+  _resetScaleResponsivenessOnConstraintOvershoot: 0
 --- !u!1 &2023937796603500022
 GameObject:
   m_ObjectHideFlags: 0
