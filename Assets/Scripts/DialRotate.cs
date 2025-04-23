@@ -20,7 +20,7 @@ public class DialRotate : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if (coroutineAllowed)
         {

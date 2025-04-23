@@ -15,7 +15,7 @@ public class CombinationDialLockControl : MonoBehaviour
         DialRotate.Rotated += CheckResults; // Subscribed to the Rotated event in a separate script.
     }
 
-    private void CheckResults(string wheelName, int number)
+    public void CheckResults(string wheelName, int number)
     {
         switch (wheelName)
         {
